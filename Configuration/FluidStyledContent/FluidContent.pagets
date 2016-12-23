@@ -63,6 +63,23 @@ TCEFORM.tt_content.wrapper_margin_top {
    }
 }
 
+# Add a generic 'padding-top' wrapper (all content based on lib.fluidContent)
+TCEFORM.tt_content.wrapper_padding_top {
+   # Based on that the default items still exists.
+   addItems {
+       101 = 5
+       102 = 10
+       103 = 15
+       104 = 20
+       105 = 25
+       106 = 30
+       107 = 40
+       108 = 50
+       109 = 60
+       110 = 70
+   }
+}
+
 # Add a generic 'margin-bottom' wrapper (all content based on lib.fluidContent)
 TCEFORM.tt_content.wrapper_margin_bottom {
    # Based on that the default items still exists.

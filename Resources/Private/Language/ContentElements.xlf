@@ -36,34 +36,6 @@
             <trans-unit id="slider.tabs.slides">
                 <source>Slides</source>
             </trans-unit>
-            <trans-unit id="slider.flexform.sheetGeneral">
-                <source>Additional settings</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay">
-                <source>Slider autoplay</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_None">
-                <source>No autoplay [default]</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_One">
-                <source>1 sec</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_Two">
-                <source>2 sec</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_Three">
-                <source>3 sec</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_Five">
-                <source>5 sec</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_Seven">
-                <source>7 sec</source>
-            </trans-unit>
-            <trans-unit id="slider.flexform.autoplay_Ten">
-                <source>10 sec</source>
-            </trans-unit>
-            
             <trans-unit id="bootstrap.slider.tabs.slides">
                 <source>Slides</source>
             </trans-unit>
@@ -136,7 +108,7 @@
                 <source>Image text and link</source>
             </trans-unit>
             <trans-unit id="imageTextLink.description">
-                <source>Image or media, text and link. Will use image before media. Will only render one image or one media.</source>
+                <source>Image or media, text and link. Will use image image before media. Will only render one image or one media.</source>
             </trans-unit>
             <trans-unit id="imageTextLink.bodyText">
                 <source>Text</source>
@@ -286,6 +258,9 @@
             </trans-unit>
             <trans-unit id="tt_content.wrapper_margin_top">
                 <source>Margin top</source>
+            </trans-unit>
+            <trans-unit id="tt_content.wrapper_padding_top">
+                <source>Padding top</source>
             </trans-unit>
             <trans-unit id="tt_content.wrapper_margin_bottom">
                 <source>Margin bottom</source>

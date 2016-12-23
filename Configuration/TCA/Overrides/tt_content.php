@@ -334,7 +334,7 @@ call_user_func(function() {
                 tx_themes_icon,rowDescription,
                 --linebreak--,pi_flexform;' . $contentElementLanguageFilePrefix . 'tt_content.tabs.settings,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-                layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,wrapper,wrapper_margin_top,
+                layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,wrapper,wrapper_margin_top,wrapper_padding_top,
                 wrapper_margin_bottom,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
                 hidden;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:field.default.hidden,
@@ -580,6 +580,18 @@ call_user_func(function() {
                 'default' => 0
             ]
         ],
+        'wrapper_padding_top' => [
+            'exclude' => true,
+            'label' => $contentElementLanguageFilePrefix . 'tt_content.wrapper_padding_top',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [$contentElementLanguageFilePrefix . 'label.default', 0]
+                ],
+                'default' => 0
+            ]
+        ],
         'wrapper_margin_bottom' => [
             'exclude' => true,
             'label' => $contentElementLanguageFilePrefix . 'tt_content.wrapper_margin_bottom',
@@ -595,7 +607,7 @@ call_user_func(function() {
     ];
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $additionalColumns);
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content', 'wrapper, aligning, wrapper_margin_top, wrapper_margin_bottom', '', 'after:layout');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content', 'wrapper, aligning, wrapper_margin_top, wrapper_padding_top, wrapper_margin_bottom', '', 'after:layout');
 });
 
 // gridelements TCA overrides

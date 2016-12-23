@@ -62,6 +62,34 @@ lib.fluidContent {
                 110 = margin-top-70
             }
         }
+
+
+        # will add variable {wrapperPaddingTopClass} to FLUIDTEMPLATE to set a "padding-top" class
+        # used in "overridden" fluid_styled_content layouts: (appended in class)
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/ContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/HeaderContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/HeaderFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/CustomContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/CustomHeaderContentFooter.html
+        3750 = T3kit\T3kitExtensionTools\DataProcessing\LayoutClassProcessor
+        3750 {
+            fieldName = wrapper_padding_top
+            as = wrapperPaddingTopClass
+            classMappings {
+                # 0 =
+                101 = padding-top-5
+                102 = padding-top-10
+                103 = padding-top-15
+                104 = padding-top-20
+                105 = padding-top-25
+                106 = padding-top-30
+                107 = padding-top-40
+                108 = padding-top-50
+                109 = padding-top-60
+                110 = padding-top-70
+            }
+        }
+
         # will add variable {wrapperMarginBottomClass} to FLUIDTEMPLATE to set a "margin-bottom" class
         # used in "overridden" fluid_styled_content layouts: (appended in class)
         # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/ContentFooter.html
